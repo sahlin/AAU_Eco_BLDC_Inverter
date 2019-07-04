@@ -5,6 +5,12 @@ This hardware achieved a second place in the efficiency competition Shell Ecomar
 
 It's effectiveness with inverter included is best at 2000+ RPM and >1 Nm (90%), which put it at for our entire run (except for acceleration).
 
+![alt text](https://raw.githubusercontent.com/sahlin/AAU_Eco_BLDC_Inverter/master/hardware/inverter.JPG)
+![alt text](https://raw.githubusercontent.com/sahlin/AAU_Eco_BLDC_Inverter/master/images/IMG_0127.jpg)
+![alt text](https://raw.githubusercontent.com/sahlin/AAU_Eco_BLDC_Inverter/master/images/IMG_2100.jpg)
+![alt text](https://raw.githubusercontent.com/sahlin/AAU_Eco_BLDC_Inverter/master/images/IMG_2101.jpg)
+
+
 The initial work was done by the VESC Project. https://vesc-project.com/
 
 Hardware is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.
