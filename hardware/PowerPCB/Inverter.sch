@@ -1,0 +1,1360 @@
+EESchema Schematic File Version 4
+LIBS:PowerPCB-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Amplifier_Current:INA282 U1
+U 1 1 5BDB1A89
+P 2800 3700
+F 0 "U1" V 2850 3850 50  0000 L CNN
+F 1 "INA282" V 2950 3750 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 2800 3700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ina282.pdf" H 2800 3700 50  0001 C CNN
+	1    2800 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L Amplifier_Current:INA282 U2
+U 1 1 5BDB1B71
+P 5400 3700
+F 0 "U2" V 5450 3850 50  0000 L CNN
+F 1 "INA282" V 5600 3750 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5400 3700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ina282.pdf" H 5400 3700 50  0001 C CNN
+	1    5400 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L Amplifier_Current:INA282 U3
+U 1 1 5BDB1BA1
+P 8300 3700
+F 0 "U3" V 8400 3800 50  0000 L CNN
+F 1 "INA282" V 8500 3750 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8300 3700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ina282.pdf" H 8300 3700 50  0001 C CNN
+	1    8300 3700
+	0    1    1    0   
+$EndComp
+Text Notes 9250 6300 0    50   ~ 0
+Bidircetional sampling
+Text Notes 9250 6000 0    50   ~ 0
+50 gain -> \n1.5V/50=0.01V->\n0.01V/50A=0.0002ohm
+$Comp
+L Device:R_US R12
+U 1 1 5BDB1D2E
+P 8300 3100
+F 0 "R12" V 8095 3100 50  0000 C CNN
+F 1 "Shunt 0.0002" V 8186 3100 50  0000 C CNN
+F 2 "Resistor_SMD:R_4020_10251Metric_Pad1.65x5.30mm_HandSolder" V 8340 3090 50  0001 C CNN
+F 3 "~" H 8300 3100 50  0001 C CNN
+	1    8300 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R9
+U 1 1 5BDB1DF2
+P 5400 3100
+F 0 "R9" V 5195 3100 50  0000 C CNN
+F 1 "Shunt 0.0002" V 5286 3100 50  0000 C CNN
+F 2 "Resistor_SMD:R_4020_10251Metric_Pad1.65x5.30mm_HandSolder" V 5440 3090 50  0001 C CNN
+F 3 "~" H 5400 3100 50  0001 C CNN
+	1    5400 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R4
+U 1 1 5BDB1E2C
+P 2800 3100
+F 0 "R4" V 2595 3100 50  0000 C CNN
+F 1 "Shunt 0.0002" V 2686 3100 50  0000 C CNN
+F 2 "Resistor_SMD:R_4020_10251Metric_Pad1.65x5.30mm_HandSolder" V 2840 3090 50  0001 C CNN
+F 3 "~" H 2800 3100 50  0001 C CNN
+	1    2800 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L PowerPCB-rescue:IPB010N06N-EcoRacerSchematics Q1
+U 1 1 5BDB2F73
+P 4150 2550
+F 0 "Q1" H 4341 2546 50  0000 L CNN
+F 1 "IPB010N06N" H 4341 2455 50  0000 L CNN
+F 2 "EcoRacerFootprints:TO-263-6" H 4150 2550 50  0001 C CNN
+F 3 "" H 4150 2550 50  0001 C CNN
+	1    4150 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L PowerPCB-rescue:IPB010N06N-EcoRacerSchematics Q2
+U 1 1 5BDB2FE9
+P 4150 3550
+F 0 "Q2" H 4341 3546 50  0000 L CNN
+F 1 "IPB010N06N" H 4341 3455 50  0000 L CNN
+F 2 "EcoRacerFootprints:TO-263-6" H 4150 3550 50  0001 C CNN
+F 3 "" H 4150 3550 50  0001 C CNN
+	1    4150 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L PowerPCB-rescue:IPB010N06N-EcoRacerSchematics Q4
+U 1 1 5BDB305B
+P 6800 3550
+F 0 "Q4" H 6991 3546 50  0000 L CNN
+F 1 "IPB010N06N" H 6991 3455 50  0000 L CNN
+F 2 "EcoRacerFootprints:TO-263-6" H 6800 3550 50  0001 C CNN
+F 3 "" H 6800 3550 50  0001 C CNN
+	1    6800 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L PowerPCB-rescue:IPB010N06N-EcoRacerSchematics Q3
+U 1 1 5BDB30A3
+P 6800 2550
+F 0 "Q3" H 6991 2546 50  0000 L CNN
+F 1 "IPB010N06N" H 6991 2455 50  0000 L CNN
+F 2 "EcoRacerFootprints:TO-263-6" H 6800 2550 50  0001 C CNN
+F 3 "" H 6800 2550 50  0001 C CNN
+	1    6800 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L PowerPCB-rescue:IPB010N06N-EcoRacerSchematics Q5
+U 1 1 5BDB30E1
+P 9700 2550
+F 0 "Q5" H 9891 2546 50  0000 L CNN
+F 1 "IPB010N06N" H 9891 2455 50  0000 L CNN
+F 2 "EcoRacerFootprints:TO-263-6" H 9700 2550 50  0001 C CNN
+F 3 "" H 9700 2550 50  0001 C CNN
+	1    9700 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L PowerPCB-rescue:IPB010N06N-EcoRacerSchematics Q6
+U 1 1 5BDB312D
+P 9700 3550
+F 0 "Q6" H 9891 3546 50  0000 L CNN
+F 1 "IPB010N06N" H 9891 3455 50  0000 L CNN
+F 2 "EcoRacerFootprints:TO-263-6" H 9700 3550 50  0001 C CNN
+F 3 "" H 9700 3550 50  0001 C CNN
+	1    9700 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R13
+U 1 1 5BDB3264
+P 9350 2600
+F 0 "R13" V 9143 2600 50  0000 C CNN
+F 1 "6.8" V 9234 2600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 9280 2600 50  0001 C CNN
+F 3 "~" H 9350 2600 50  0001 C CNN
+	1    9350 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R14
+U 1 1 5BDB3328
+P 9350 3600
+F 0 "R14" V 9143 3600 50  0000 C CNN
+F 1 "6.8" V 9234 3600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 9280 3600 50  0001 C CNN
+F 3 "~" H 9350 3600 50  0001 C CNN
+	1    9350 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 5BDB3366
+P 6450 3600
+F 0 "R11" V 6243 3600 50  0000 C CNN
+F 1 "6.8" V 6334 3600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6380 3600 50  0001 C CNN
+F 3 "~" H 6450 3600 50  0001 C CNN
+	1    6450 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 5BDB33A6
+P 6450 2600
+F 0 "R10" V 6243 2600 50  0000 C CNN
+F 1 "6.8" V 6334 2600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6380 2600 50  0001 C CNN
+F 3 "~" H 6450 2600 50  0001 C CNN
+	1    6450 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5BDB33E6
+P 3800 2600
+F 0 "R5" V 3593 2600 50  0000 C CNN
+F 1 "6.8" V 3684 2600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3730 2600 50  0001 C CNN
+F 3 "~" H 3800 2600 50  0001 C CNN
+	1    3800 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5BDB3424
+P 3800 3600
+F 0 "R6" V 3593 3600 50  0000 C CNN
+F 1 "6.8" V 3684 3600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3730 3600 50  0001 C CNN
+F 3 "~" H 3800 3600 50  0001 C CNN
+	1    3800 3600
+	0    1    1    0   
+$EndComp
+Text HLabel 3650 2600 0    50   Input ~ 0
+GH_A
+Text HLabel 3650 3600 0    50   Input ~ 0
+GL_A
+Text HLabel 6300 3600 0    50   Input ~ 0
+GL_B
+Text HLabel 6300 2600 0    50   Input ~ 0
+GH_B
+Text HLabel 9200 2600 0    50   Input ~ 0
+GH_C
+Text HLabel 9200 3600 0    50   Input ~ 0
+GL_C
+Wire Wire Line
+	9850 2900 9850 3100
+Wire Wire Line
+	6950 2900 6950 3100
+Wire Wire Line
+	4300 3300 4300 3100
+Wire Wire Line
+	9850 2300 9850 1900
+Wire Wire Line
+	4300 2300 4300 1900
+Wire Wire Line
+	4300 1900 3400 1900
+Wire Wire Line
+	6950 2300 6950 1900
+$Comp
+L power:+VDC #PWR016
+U 1 1 5BDB4438
+P 3400 1900
+F 0 "#PWR016" H 3400 1800 50  0001 C CNN
+F 1 "+VDC" H 3400 2175 50  0000 C CNN
+F 2 "" H 3400 1900 50  0001 C CNN
+F 3 "" H 3400 1900 50  0001 C CNN
+	1    3400 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 3900 4300 4200
+Wire Wire Line
+	9850 3900 9850 4200
+Connection ~ 9850 4200
+Wire Wire Line
+	9850 4200 10250 4200
+Wire Wire Line
+	6950 3900 6950 4200
+$Comp
+L power:GND #PWR032
+U 1 1 5BDB47EF
+P 10250 4200
+F 0 "#PWR032" H 10250 3950 50  0001 C CNN
+F 1 "GND" H 10255 4027 50  0000 C CNN
+F 2 "" H 10250 4200 50  0001 C CNN
+F 3 "" H 10250 4200 50  0001 C CNN
+	1    10250 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 3100 3400 3100
+Connection ~ 4300 3100
+Wire Wire Line
+	4300 3100 4300 2900
+Wire Wire Line
+	8450 3100 8650 3100
+Connection ~ 9850 3100
+Wire Wire Line
+	9850 3100 9850 3300
+Wire Wire Line
+	5550 3100 5700 3100
+Connection ~ 6950 3100
+Wire Wire Line
+	6950 3100 6950 3300
+Wire Wire Line
+	6950 4200 7250 4200
+Connection ~ 6950 4200
+Wire Wire Line
+	4300 4200 4600 4200
+Wire Wire Line
+	6950 1900 8050 1900
+Connection ~ 6950 1900
+Wire Wire Line
+	4300 1900 6950 1900
+Connection ~ 4300 1900
+$Comp
+L Device:C C6
+U 1 1 5BDB6127
+P 4850 1350
+F 0 "C6" H 4735 1304 50  0000 R CNN
+F 1 "4.7uF 100V" H 4735 1395 50  0000 R CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 4888 1200 50  0001 C CNN
+F 3 "~" H 4850 1350 50  0001 C CNN
+	1    4850 1350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C7
+U 1 1 5BDB6326
+P 5050 1350
+F 0 "C7" H 5165 1396 50  0000 L CNN
+F 1 "4.7uF 100V" H 5165 1305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 5088 1200 50  0001 C CNN
+F 3 "~" H 5050 1350 50  0001 C CNN
+	1    5050 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C8
+U 1 1 5BDB64B0
+P 5250 1350
+F 0 "C8" H 5365 1396 50  0000 L CNN
+F 1 "4.7uF 100V" H 5365 1305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 5288 1200 50  0001 C CNN
+F 3 "~" H 5250 1350 50  0001 C CNN
+	1    5250 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C9
+U 1 1 5BDB64B7
+P 5450 1350
+F 0 "C9" H 5565 1396 50  0000 L CNN
+F 1 "4.7uF 100V" H 5565 1305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 5488 1200 50  0001 C CNN
+F 3 "~" H 5450 1350 50  0001 C CNN
+	1    5450 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C11
+U 1 1 5BDB66A0
+P 5850 1350
+F 0 "C11" H 5965 1396 50  0000 L CNN
+F 1 "4.7uF 100V" H 5965 1305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 5888 1200 50  0001 C CNN
+F 3 "~" H 5850 1350 50  0001 C CNN
+	1    5850 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C10
+U 1 1 5BDB66A7
+P 5650 1350
+F 0 "C10" H 5765 1396 50  0000 L CNN
+F 1 "4.7uF 100V" H 5765 1305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 5688 1200 50  0001 C CNN
+F 3 "~" H 5650 1350 50  0001 C CNN
+	1    5650 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+VDC #PWR018
+U 1 1 5BDB6876
+P 4850 1200
+F 0 "#PWR018" H 4850 1100 50  0001 C CNN
+F 1 "+VDC" H 4850 1475 50  0000 C CNN
+F 2 "" H 4850 1200 50  0001 C CNN
+F 3 "" H 4850 1200 50  0001 C CNN
+	1    4850 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR023
+U 1 1 5BDB6B98
+P 5850 1500
+F 0 "#PWR023" H 5850 1250 50  0001 C CNN
+F 1 "GND" H 5855 1327 50  0000 C CNN
+F 2 "" H 5850 1500 50  0001 C CNN
+F 3 "" H 5850 1500 50  0001 C CNN
+	1    5850 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 1200 5650 1200
+Connection ~ 4850 1200
+Connection ~ 5050 1200
+Wire Wire Line
+	5050 1200 4850 1200
+Connection ~ 5250 1200
+Wire Wire Line
+	5250 1200 5050 1200
+Connection ~ 5450 1200
+Wire Wire Line
+	5450 1200 5250 1200
+Connection ~ 5650 1200
+Wire Wire Line
+	5650 1200 5450 1200
+Wire Wire Line
+	4850 1500 5050 1500
+Connection ~ 5850 1500
+Connection ~ 5050 1500
+Wire Wire Line
+	5050 1500 5250 1500
+Connection ~ 5250 1500
+Wire Wire Line
+	5250 1500 5450 1500
+Connection ~ 5450 1500
+Wire Wire Line
+	5450 1500 5650 1500
+Connection ~ 5650 1500
+Wire Wire Line
+	5650 1500 5850 1500
+Text Notes 5050 1100 0    50   ~ 0
+ceramic bypass capacitors
+$Comp
+L Device:C C13
+U 1 1 5BDB80FF
+P 6950 1300
+F 0 "C13" H 6835 1254 50  0000 R CNN
+F 1 "EEUFC1J681L" H 6835 1345 50  0000 R CNN
+F 2 "EcoRacerFootprints:CAP_inverter" H 6988 1150 50  0001 C CNN
+F 3 "https://dk.rs-online.com/web/p/products/0572114/" H 6950 1300 50  0001 C CNN
+	1    6950 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C14
+U 1 1 5BDB8106
+P 7150 1300
+F 0 "C14" H 7265 1346 50  0000 L CNN
+F 1 "EEUFC1J681L" H 7265 1255 50  0000 L CNN
+F 2 "EcoRacerFootprints:CAP_inverter" H 7188 1150 50  0001 C CNN
+F 3 "~" H 7150 1300 50  0001 C CNN
+	1    7150 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C15
+U 1 1 5BDB810D
+P 7350 1300
+F 0 "C15" H 7465 1346 50  0000 L CNN
+F 1 "EEUFC1J681L" H 7465 1255 50  0000 L CNN
+F 2 "EcoRacerFootprints:CAP_inverter" H 7388 1150 50  0001 C CNN
+F 3 "~" H 7350 1300 50  0001 C CNN
+	1    7350 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+VDC #PWR025
+U 1 1 5BDB8129
+P 6950 1150
+F 0 "#PWR025" H 6950 1050 50  0001 C CNN
+F 1 "+VDC" H 6950 1425 50  0000 C CNN
+F 2 "" H 6950 1150 50  0001 C CNN
+F 3 "" H 6950 1150 50  0001 C CNN
+	1    6950 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR026
+U 1 1 5BDB812F
+P 7350 1450
+F 0 "#PWR026" H 7350 1200 50  0001 C CNN
+F 1 "GND" H 7355 1277 50  0000 C CNN
+F 2 "" H 7350 1450 50  0001 C CNN
+F 3 "" H 7350 1450 50  0001 C CNN
+	1    7350 1450
+	1    0    0    -1  
+$EndComp
+Connection ~ 6950 1150
+Connection ~ 7150 1150
+Wire Wire Line
+	7150 1150 6950 1150
+Wire Wire Line
+	7350 1150 7150 1150
+Wire Wire Line
+	6950 1450 7150 1450
+Connection ~ 7150 1450
+Wire Wire Line
+	7150 1450 7350 1450
+Text Notes 7150 1050 0    50   ~ 0
+Electorlytic DC Bus capacitors
+Connection ~ 7350 1450
+$Comp
+L Connector_Generic:Conn_01x01 J2
+U 1 1 5BDB92D2
+P 2350 3100
+F 0 "J2" H 2270 2875 50  0000 C CNN
+F 1 "PH_A" H 2270 2966 50  0000 C CNN
+F 2 "EcoRacerFootprints:BulletConnector" H 2350 3100 50  0001 C CNN
+F 3 "~" H 2350 3100 50  0001 C CNN
+	1    2350 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J4
+U 1 1 5BDB9376
+P 4900 3100
+F 0 "J4" H 4820 2875 50  0000 C CNN
+F 1 "PH_B" H 4820 2966 50  0000 C CNN
+F 2 "EcoRacerFootprints:BulletConnector" H 4900 3100 50  0001 C CNN
+F 3 "~" H 4900 3100 50  0001 C CNN
+	1    4900 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J5
+U 1 1 5BDB9470
+P 7750 3100
+F 0 "J5" H 7670 2875 50  0000 C CNN
+F 1 "PH_C" H 7670 2966 50  0000 C CNN
+F 2 "EcoRacerFootprints:BulletConnector" H 7750 3100 50  0001 C CNN
+F 3 "~" H 7750 3100 50  0001 C CNN
+	1    7750 3100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5300 3400 5300 3200
+Wire Wire Line
+	5300 3200 5250 3200
+Wire Wire Line
+	5250 3200 5250 3100
+Connection ~ 5250 3100
+Wire Wire Line
+	5550 3100 5550 3200
+Wire Wire Line
+	5550 3200 5500 3200
+Wire Wire Line
+	5500 3200 5500 3400
+Connection ~ 5550 3100
+Wire Wire Line
+	8450 3100 8450 3200
+Wire Wire Line
+	8450 3200 8400 3200
+Connection ~ 8450 3100
+Wire Wire Line
+	8150 3100 8150 3200
+Wire Wire Line
+	8150 3200 8200 3200
+Connection ~ 8150 3100
+Wire Wire Line
+	2950 3100 2950 3200
+Wire Wire Line
+	2950 3200 2900 3200
+Wire Wire Line
+	2900 3200 2900 3400
+Connection ~ 2950 3100
+Wire Wire Line
+	2650 3100 2650 3200
+Wire Wire Line
+	2650 3200 2700 3200
+Wire Wire Line
+	2700 3200 2700 3400
+Connection ~ 2650 3100
+Wire Wire Line
+	2550 3100 2650 3100
+Wire Wire Line
+	5100 3100 5250 3100
+Wire Wire Line
+	8150 3100 7950 3100
+$Comp
+L Device:C C17
+U 1 1 5BDC0374
+P 8750 3750
+F 0 "C17" H 8865 3796 50  0000 L CNN
+F 1 "100nF" H 8865 3705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8788 3600 50  0001 C CNN
+F 3 "~" H 8750 3750 50  0001 C CNN
+	1    8750 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 3600 8600 3600
+$Comp
+L power:GND #PWR031
+U 1 1 5BDC16A4
+P 8750 3900
+F 0 "#PWR031" H 8750 3650 50  0001 C CNN
+F 1 "GND" H 8755 3727 50  0000 C CNN
+F 2 "" H 8750 3900 50  0001 C CNN
+F 3 "" H 8750 3900 50  0001 C CNN
+	1    8750 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C12
+U 1 1 5BDC1869
+P 5850 3750
+F 0 "C12" H 5965 3796 50  0000 L CNN
+F 1 "100nF" H 5965 3705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5888 3600 50  0001 C CNN
+F 3 "~" H 5850 3750 50  0001 C CNN
+	1    5850 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR024
+U 1 1 5BDC1870
+P 5850 3900
+F 0 "#PWR024" H 5850 3650 50  0001 C CNN
+F 1 "GND" H 5855 3727 50  0000 C CNN
+F 2 "" H 5850 3900 50  0001 C CNN
+F 3 "" H 5850 3900 50  0001 C CNN
+	1    5850 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5BDC2990
+P 3200 3750
+F 0 "C4" H 3315 3796 50  0000 L CNN
+F 1 "100nF" H 3315 3705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3238 3600 50  0001 C CNN
+F 3 "~" H 3200 3750 50  0001 C CNN
+	1    3200 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR015
+U 1 1 5BDC2997
+P 3200 3900
+F 0 "#PWR015" H 3200 3650 50  0001 C CNN
+F 1 "GND" H 3205 3727 50  0000 C CNN
+F 2 "" H 3200 3900 50  0001 C CNN
+F 3 "" H 3200 3900 50  0001 C CNN
+	1    3200 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 3600 3100 3600
+Wire Wire Line
+	5850 3600 5700 3600
+$Comp
+L power:VCC #PWR022
+U 1 1 5BDC5769
+P 5700 3600
+F 0 "#PWR022" H 5700 3450 50  0001 C CNN
+F 1 "VCC" H 5717 3773 50  0000 C CNN
+F 2 "" H 5700 3600 50  0001 C CNN
+F 3 "" H 5700 3600 50  0001 C CNN
+	1    5700 3600
+	1    0    0    -1  
+$EndComp
+Connection ~ 5700 3600
+$Comp
+L power:VCC #PWR030
+U 1 1 5BDC57C1
+P 8600 3600
+F 0 "#PWR030" H 8600 3450 50  0001 C CNN
+F 1 "VCC" H 8617 3773 50  0000 C CNN
+F 2 "" H 8600 3600 50  0001 C CNN
+F 3 "" H 8600 3600 50  0001 C CNN
+	1    8600 3600
+	1    0    0    -1  
+$EndComp
+Connection ~ 8600 3600
+$Comp
+L power:VCC #PWR014
+U 1 1 5BDC5907
+P 3100 3600
+F 0 "#PWR014" H 3100 3450 50  0001 C CNN
+F 1 "VCC" H 3117 3773 50  0000 C CNN
+F 2 "" H 3100 3600 50  0001 C CNN
+F 3 "" H 3100 3600 50  0001 C CNN
+	1    3100 3600
+	1    0    0    -1  
+$EndComp
+Connection ~ 3100 3600
+$Comp
+L power:GND #PWR013
+U 1 1 5BDC5B1F
+P 2500 3800
+F 0 "#PWR013" H 2500 3550 50  0001 C CNN
+F 1 "GND" H 2505 3627 50  0000 C CNN
+F 2 "" H 2500 3800 50  0001 C CNN
+F 3 "" H 2500 3800 50  0001 C CNN
+	1    2500 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR011
+U 1 1 5BDC5B70
+P 2500 3600
+F 0 "#PWR011" H 2500 3350 50  0001 C CNN
+F 1 "GND" H 2505 3427 50  0000 C CNN
+F 2 "" H 2500 3600 50  0001 C CNN
+F 3 "" H 2500 3600 50  0001 C CNN
+	1    2500 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR021
+U 1 1 5BDC5C9B
+P 5100 3800
+F 0 "#PWR021" H 5100 3550 50  0001 C CNN
+F 1 "GND" H 5105 3627 50  0000 C CNN
+F 2 "" H 5100 3800 50  0001 C CNN
+F 3 "" H 5100 3800 50  0001 C CNN
+	1    5100 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR029
+U 1 1 5BDC5DBE
+P 8000 3800
+F 0 "#PWR029" H 8000 3550 50  0001 C CNN
+F 1 "GND" H 8005 3627 50  0000 C CNN
+F 2 "" H 8000 3800 50  0001 C CNN
+F 3 "" H 8000 3800 50  0001 C CNN
+	1    8000 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR019
+U 1 1 5BDC5E78
+P 5100 3600
+F 0 "#PWR019" H 5100 3350 50  0001 C CNN
+F 1 "GND" H 5105 3427 50  0000 C CNN
+F 2 "" H 5100 3600 50  0001 C CNN
+F 3 "" H 5100 3600 50  0001 C CNN
+	1    5100 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR027
+U 1 1 5BDC5F32
+P 8000 3600
+F 0 "#PWR027" H 8000 3350 50  0001 C CNN
+F 1 "GND" H 8005 3427 50  0000 C CNN
+F 2 "" H 8000 3600 50  0001 C CNN
+F 3 "" H 8000 3600 50  0001 C CNN
+	1    8000 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR028
+U 1 1 5BDC6055
+P 8000 3700
+F 0 "#PWR028" H 8000 3550 50  0001 C CNN
+F 1 "VCC" V 8018 3827 50  0000 L CNN
+F 2 "" H 8000 3700 50  0001 C CNN
+F 3 "" H 8000 3700 50  0001 C CNN
+	1    8000 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR020
+U 1 1 5BDC610F
+P 5100 3700
+F 0 "#PWR020" H 5100 3550 50  0001 C CNN
+F 1 "VCC" V 5118 3827 50  0000 L CNN
+F 2 "" H 5100 3700 50  0001 C CNN
+F 3 "" H 5100 3700 50  0001 C CNN
+	1    5100 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR012
+U 1 1 5BDC61C9
+P 2500 3700
+F 0 "#PWR012" H 2500 3550 50  0001 C CNN
+F 1 "VCC" V 2518 3827 50  0000 L CNN
+F 2 "" H 2500 3700 50  0001 C CNN
+F 3 "" H 2500 3700 50  0001 C CNN
+	1    2500 3700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8200 3200 8200 3400
+Wire Wire Line
+	8400 3200 8400 3400
+Text Label 8300 4000 0    50   ~ 0
+C_C
+Text Label 5400 4000 0    50   ~ 0
+C_B
+Text Label 2800 4000 0    50   ~ 0
+C_A
+Text HLabel 1900 5050 0    50   Output ~ 0
+CURR_A
+Text HLabel 1900 5650 0    50   Output ~ 0
+CURR_B
+Text HLabel 1900 6250 0    50   Output ~ 0
+CURR_C
+$Comp
+L Device:C C1
+U 1 1 5BDC96D3
+P 2250 5200
+F 0 "C1" H 2365 5246 50  0000 L CNN
+F 1 "4.7nF" H 2365 5155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2288 5050 50  0001 C CNN
+F 3 "~" H 2250 5200 50  0001 C CNN
+	1    2250 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5BDC976E
+P 2600 5050
+F 0 "R1" V 2393 5050 50  0000 C CNN
+F 1 "100" V 2484 5050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2530 5050 50  0001 C CNN
+F 3 "~" H 2600 5050 50  0001 C CNN
+	1    2600 5050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2450 5050 2250 5050
+Connection ~ 2250 5050
+Wire Wire Line
+	2250 5050 1900 5050
+$Comp
+L power:GND #PWR08
+U 1 1 5BDCA908
+P 2250 5350
+F 0 "#PWR08" H 2250 5100 50  0001 C CNN
+F 1 "GND" H 2255 5177 50  0000 C CNN
+F 2 "" H 2250 5350 50  0001 C CNN
+F 3 "" H 2250 5350 50  0001 C CNN
+	1    2250 5350
+	1    0    0    -1  
+$EndComp
+Text Label 2750 5050 0    50   ~ 0
+C_A
+$Comp
+L Device:C C2
+U 1 1 5BDCAF3F
+P 2250 5800
+F 0 "C2" H 2365 5846 50  0000 L CNN
+F 1 "4.7nF" H 2365 5755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2288 5650 50  0001 C CNN
+F 3 "~" H 2250 5800 50  0001 C CNN
+	1    2250 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5BDCAF46
+P 2600 5650
+F 0 "R2" V 2393 5650 50  0000 C CNN
+F 1 "100" V 2484 5650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2530 5650 50  0001 C CNN
+F 3 "~" H 2600 5650 50  0001 C CNN
+	1    2600 5650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2450 5650 2250 5650
+Connection ~ 2250 5650
+Wire Wire Line
+	2250 5650 1900 5650
+$Comp
+L power:GND #PWR09
+U 1 1 5BDCAF50
+P 2250 5950
+F 0 "#PWR09" H 2250 5700 50  0001 C CNN
+F 1 "GND" H 2255 5777 50  0000 C CNN
+F 2 "" H 2250 5950 50  0001 C CNN
+F 3 "" H 2250 5950 50  0001 C CNN
+	1    2250 5950
+	1    0    0    -1  
+$EndComp
+Text Label 2750 5650 0    50   ~ 0
+C_B
+$Comp
+L Device:C C3
+U 1 1 5BDCC273
+P 2250 6400
+F 0 "C3" H 2365 6446 50  0000 L CNN
+F 1 "4.7nF" H 2365 6355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2288 6250 50  0001 C CNN
+F 3 "~" H 2250 6400 50  0001 C CNN
+	1    2250 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5BDCC27A
+P 2600 6250
+F 0 "R3" V 2393 6250 50  0000 C CNN
+F 1 "100" V 2484 6250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2530 6250 50  0001 C CNN
+F 3 "~" H 2600 6250 50  0001 C CNN
+	1    2600 6250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2450 6250 2250 6250
+Connection ~ 2250 6250
+Wire Wire Line
+	2250 6250 1900 6250
+$Comp
+L power:GND #PWR010
+U 1 1 5BDCC284
+P 2250 6550
+F 0 "#PWR010" H 2250 6300 50  0001 C CNN
+F 1 "GND" H 2255 6377 50  0000 C CNN
+F 2 "" H 2250 6550 50  0001 C CNN
+F 3 "" H 2250 6550 50  0001 C CNN
+	1    2250 6550
+	1    0    0    -1  
+$EndComp
+Text Label 2750 6250 0    50   ~ 0
+C_C
+Text HLabel 3850 5550 0    50   Output ~ 0
+TEMP
+$Comp
+L Device:R R7
+U 1 1 5BDCF163
+P 4050 5400
+F 0 "R7" H 4120 5446 50  0000 L CNN
+F 1 "10k NTC" H 4120 5355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3980 5400 50  0001 C CNN
+F 3 "~" H 4050 5400 50  0001 C CNN
+	1    4050 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 5BDCF21D
+P 4050 5700
+F 0 "R8" H 4120 5746 50  0000 L CNN
+F 1 "10k" H 4120 5655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3980 5700 50  0001 C CNN
+F 3 "~" H 4050 5700 50  0001 C CNN
+	1    4050 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 5BDCF2CE
+P 4350 5700
+F 0 "C5" H 4465 5746 50  0000 L CNN
+F 1 "2.2uF" H 4465 5655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4388 5550 50  0001 C CNN
+F 3 "~" H 4350 5700 50  0001 C CNN
+	1    4350 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 5850 4050 5850
+Wire Wire Line
+	4350 5550 4050 5550
+Connection ~ 4050 5550
+Wire Wire Line
+	3850 5550 4050 5550
+$Comp
+L power:VCC #PWR017
+U 1 1 5BDD38D7
+P 4050 5250
+F 0 "#PWR017" H 4050 5100 50  0001 C CNN
+F 1 "VCC" H 4067 5423 50  0000 C CNN
+F 2 "" H 4050 5250 50  0001 C CNN
+F 3 "" H 4050 5250 50  0001 C CNN
+	1    4050 5250
+	1    0    0    -1  
+$EndComp
+Text HLabel 9850 3100 2    50   Output ~ 0
+SH_C
+Text HLabel 6950 3100 2    50   Output ~ 0
+SH_B
+Text HLabel 4300 3100 2    50   Output ~ 0
+SH_A
+Text HLabel 4300 3950 2    50   Output ~ 0
+SL_A
+Text HLabel 6950 3950 2    50   Output ~ 0
+SL_B
+Text HLabel 9850 3950 2    50   Output ~ 0
+SL_C
+$Comp
+L Device:C C16
+U 1 1 5BDFCDC8
+P 7550 1300
+F 0 "C16" H 7665 1346 50  0000 L CNN
+F 1 "EEUFC1J681L" H 7665 1255 50  0000 L CNN
+F 2 "EcoRacerFootprints:CAP_inverter" H 7588 1150 50  0001 C CNN
+F 3 "~" H 7550 1300 50  0001 C CNN
+	1    7550 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 1450 7550 1450
+Wire Wire Line
+	7550 1150 7350 1150
+Connection ~ 7350 1150
+$Comp
+L Connector_Generic:Conn_01x01 J3
+U 1 1 5BDAD288
+P 4300 1700
+F 0 "J3" H 4220 1475 50  0000 C CNN
+F 1 "VDC" H 4220 1566 50  0000 C CNN
+F 2 "EcoRacerFootprints:5mmWireConn" H 4300 1700 50  0001 C CNN
+F 3 "~" H 4300 1700 50  0001 C CNN
+	1    4300 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J6
+U 1 1 5BDAD3C2
+P 9850 4400
+F 0 "J6" H 9770 4175 50  0000 C CNN
+F 1 "GND" H 9770 4266 50  0000 C CNN
+F 2 "EcoRacerFootprints:5mmWireConn" H 9850 4400 50  0001 C CNN
+F 3 "~" H 9850 4400 50  0001 C CNN
+	1    9850 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:Heatsink HS1
+U 1 1 5BDB221D
+P 5800 4600
+F 0 "HS1" H 5942 4721 50  0000 L CNN
+F 1 "Heatsink" H 5942 4630 50  0000 L CNN
+F 2 "EcoRacerFootprints:HeatSink" H 5812 4600 50  0001 C CNN
+F 3 "" H 5812 4600 50  0001 C CNN
+	1    5800 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L PowerPCB-rescue:Via_array-EcoRacerSchematics Via1
+U 1 1 5BDB291C
+P 3350 3100
+F 0 "Via1" V 3078 3278 60  0000 L CNN
+F 1 "Via_array" V 3184 3278 60  0000 L CNN
+F 2 "EcoRacerFootprints:Via_array" H 3350 3100 60  0001 C CNN
+F 3 "" H 3350 3100 60  0001 C CNN
+	1    3350 3100
+	0    1    1    0   
+$EndComp
+Connection ~ 3400 3100
+Wire Wire Line
+	3400 3100 3650 3100
+$Comp
+L PowerPCB-rescue:Via_array-EcoRacerSchematics Via2
+U 1 1 5BDB2C5F
+P 3600 3100
+F 0 "Via2" V 3328 3278 60  0000 L CNN
+F 1 "Via_array" V 3434 3278 60  0000 L CNN
+F 2 "EcoRacerFootprints:Via_array" H 3600 3100 60  0001 C CNN
+F 3 "" H 3600 3100 60  0001 C CNN
+	1    3600 3100
+	0    1    1    0   
+$EndComp
+Connection ~ 3650 3100
+Wire Wire Line
+	3650 3100 3900 3100
+$Comp
+L PowerPCB-rescue:Via_array-EcoRacerSchematics Via3
+U 1 1 5BDB2CDB
+P 3850 3100
+F 0 "Via3" V 3578 3278 60  0000 L CNN
+F 1 "Via_array" V 3684 3278 60  0000 L CNN
+F 2 "EcoRacerFootprints:Via_array" H 3850 3100 60  0001 C CNN
+F 3 "" H 3850 3100 60  0001 C CNN
+	1    3850 3100
+	0    1    1    0   
+$EndComp
+Connection ~ 3900 3100
+Wire Wire Line
+	3900 3100 4300 3100
+$Comp
+L PowerPCB-rescue:Via_array-EcoRacerSchematics Via5
+U 1 1 5BDB2E6A
+P 5650 3100
+F 0 "Via5" V 5378 3278 60  0000 L CNN
+F 1 "Via_array" V 5484 3278 60  0000 L CNN
+F 2 "EcoRacerFootprints:Via_array" H 5650 3100 60  0001 C CNN
+F 3 "" H 5650 3100 60  0001 C CNN
+	1    5650 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L PowerPCB-rescue:Via_array-EcoRacerSchematics Via6
+U 1 1 5BDB2E71
+P 5900 3100
+F 0 "Via6" V 5628 3278 60  0000 L CNN
+F 1 "Via_array" V 5734 3278 60  0000 L CNN
+F 2 "EcoRacerFootprints:Via_array" H 5900 3100 60  0001 C CNN
+F 3 "" H 5900 3100 60  0001 C CNN
+	1    5900 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L PowerPCB-rescue:Via_array-EcoRacerSchematics Via7
+U 1 1 5BDB2E78
+P 6150 3100
+F 0 "Via7" V 5878 3278 60  0000 L CNN
+F 1 "Via_array" V 5984 3278 60  0000 L CNN
+F 2 "EcoRacerFootprints:Via_array" H 6150 3100 60  0001 C CNN
+F 3 "" H 6150 3100 60  0001 C CNN
+	1    6150 3100
+	0    1    1    0   
+$EndComp
+Connection ~ 5700 3100
+Wire Wire Line
+	5700 3100 5950 3100
+Connection ~ 5950 3100
+Wire Wire Line
+	5950 3100 6200 3100
+Connection ~ 6200 3100
+Wire Wire Line
+	6200 3100 6950 3100
+$Comp
+L PowerPCB-rescue:Via_array-EcoRacerSchematics Via9
+U 1 1 5BDB4D77
+P 8600 3100
+F 0 "Via9" V 8328 3278 60  0000 L CNN
+F 1 "Via_array" V 8434 3278 60  0000 L CNN
+F 2 "EcoRacerFootprints:Via_array" H 8600 3100 60  0001 C CNN
+F 3 "" H 8600 3100 60  0001 C CNN
+	1    8600 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L PowerPCB-rescue:Via_array-EcoRacerSchematics Via10
+U 1 1 5BDB4D7E
+P 8850 3100
+F 0 "Via10" V 8578 3278 60  0000 L CNN
+F 1 "Via_array" V 8684 3278 60  0000 L CNN
+F 2 "EcoRacerFootprints:Via_array" H 8850 3100 60  0001 C CNN
+F 3 "" H 8850 3100 60  0001 C CNN
+	1    8850 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L PowerPCB-rescue:Via_array-EcoRacerSchematics Via11
+U 1 1 5BDB4D85
+P 9100 3100
+F 0 "Via11" V 8828 3278 60  0000 L CNN
+F 1 "Via_array" V 8934 3278 60  0000 L CNN
+F 2 "EcoRacerFootprints:Via_array" H 9100 3100 60  0001 C CNN
+F 3 "" H 9100 3100 60  0001 C CNN
+	1    9100 3100
+	0    1    1    0   
+$EndComp
+Connection ~ 8650 3100
+Wire Wire Line
+	8650 3100 8900 3100
+Connection ~ 8900 3100
+Wire Wire Line
+	8900 3100 9150 3100
+Connection ~ 9150 3100
+Wire Wire Line
+	9150 3100 9850 3100
+$Comp
+L PowerPCB-rescue:Via_array-EcoRacerSchematics Via12
+U 1 1 5BDB7032
+P 9400 4200
+F 0 "Via12" V 9235 4072 60  0000 R CNN
+F 1 "Via_array" V 9129 4072 60  0000 R CNN
+F 2 "EcoRacerFootprints:Via_array" H 9400 4200 60  0001 C CNN
+F 3 "" H 9400 4200 60  0001 C CNN
+	1    9400 4200
+	0    -1   -1   0   
+$EndComp
+Connection ~ 9350 4200
+Wire Wire Line
+	9350 4200 9850 4200
+$Comp
+L PowerPCB-rescue:Via_array-EcoRacerSchematics Via8
+U 1 1 5BDB720C
+P 7000 4200
+F 0 "Via8" V 6835 4072 60  0000 R CNN
+F 1 "Via_array" V 6729 4072 60  0000 R CNN
+F 2 "EcoRacerFootprints:Via_array" H 7000 4200 60  0001 C CNN
+F 3 "" H 7000 4200 60  0001 C CNN
+	1    7000 4200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L PowerPCB-rescue:Via_array-EcoRacerSchematics Via4
+U 1 1 5BDB72C6
+P 4350 4200
+F 0 "Via4" V 4185 4072 60  0000 R CNN
+F 1 "Via_array" V 4079 4072 60  0000 R CNN
+F 2 "EcoRacerFootprints:Via_array" H 4350 4200 60  0001 C CNN
+F 3 "" H 4350 4200 60  0001 C CNN
+	1    4350 4200
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4300 4200
+$Comp
+L PowerPCB-rescue:Via_array-EcoRacerSchematics Via18
+U 1 1 5BDB74CF
+P 9800 1900
+F 0 "Via18" V 9528 2078 60  0000 L CNN
+F 1 "Via_array" V 9634 2078 60  0000 L CNN
+F 2 "EcoRacerFootprints:Via_array" H 9800 1900 60  0001 C CNN
+F 3 "" H 9800 1900 60  0001 C CNN
+	1    9800 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L PowerPCB-rescue:Via_array-EcoRacerSchematics Via17
+U 1 1 5BDB7637
+P 9500 1900
+F 0 "Via17" V 9228 2078 60  0000 L CNN
+F 1 "Via_array" V 9334 2078 60  0000 L CNN
+F 2 "EcoRacerFootprints:Via_array" H 9500 1900 60  0001 C CNN
+F 3 "" H 9500 1900 60  0001 C CNN
+	1    9500 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L PowerPCB-rescue:Via_array-EcoRacerSchematics Via16
+U 1 1 5BDB7777
+P 8900 1900
+F 0 "Via16" V 8628 2078 60  0000 L CNN
+F 1 "Via_array" V 8734 2078 60  0000 L CNN
+F 2 "EcoRacerFootprints:Via_array" H 8900 1900 60  0001 C CNN
+F 3 "" H 8900 1900 60  0001 C CNN
+	1    8900 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L PowerPCB-rescue:Via_array-EcoRacerSchematics Via15
+U 1 1 5BDB777E
+P 8600 1900
+F 0 "Via15" V 8328 2078 60  0000 L CNN
+F 1 "Via_array" V 8434 2078 60  0000 L CNN
+F 2 "EcoRacerFootprints:Via_array" H 8600 1900 60  0001 C CNN
+F 3 "" H 8600 1900 60  0001 C CNN
+	1    8600 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L PowerPCB-rescue:Via_array-EcoRacerSchematics Via14
+U 1 1 5BDB982C
+P 8300 1900
+F 0 "Via14" V 8028 2078 60  0000 L CNN
+F 1 "Via_array" V 8134 2078 60  0000 L CNN
+F 2 "EcoRacerFootprints:Via_array" H 8300 1900 60  0001 C CNN
+F 3 "" H 8300 1900 60  0001 C CNN
+	1    8300 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L PowerPCB-rescue:Via_array-EcoRacerSchematics Via13
+U 1 1 5BDB9833
+P 8000 1900
+F 0 "Via13" V 7728 2078 60  0000 L CNN
+F 1 "Via_array" V 7834 2078 60  0000 L CNN
+F 2 "EcoRacerFootprints:Via_array" H 8000 1900 60  0001 C CNN
+F 3 "" H 8000 1900 60  0001 C CNN
+	1    8000 1900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9550 1900 9850 1900
+Connection ~ 9550 1900
+Connection ~ 9850 1900
+$Comp
+L PowerPCB-rescue:Via_array-EcoRacerSchematics Via21
+U 1 1 5BDBDDF1
+P 9500 1900
+F 0 "Via21" V 9228 2078 60  0000 L CNN
+F 1 "Via_array" V 9334 2078 60  0000 L CNN
+F 2 "EcoRacerFootprints:Via_array" H 9500 1900 60  0001 C CNN
+F 3 "" H 9500 1900 60  0001 C CNN
+	1    9500 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L PowerPCB-rescue:Via_array-EcoRacerSchematics Via20
+U 1 1 5BDBDDF8
+P 9200 1900
+F 0 "Via20" V 8928 2078 60  0000 L CNN
+F 1 "Via_array" V 9034 2078 60  0000 L CNN
+F 2 "EcoRacerFootprints:Via_array" H 9200 1900 60  0001 C CNN
+F 3 "" H 9200 1900 60  0001 C CNN
+	1    9200 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L PowerPCB-rescue:Via_array-EcoRacerSchematics Via19
+U 1 1 5BDBDDFF
+P 8600 1900
+F 0 "Via19" V 8328 2078 60  0000 L CNN
+F 1 "Via_array" V 8434 2078 60  0000 L CNN
+F 2 "EcoRacerFootprints:Via_array" H 8600 1900 60  0001 C CNN
+F 3 "" H 8600 1900 60  0001 C CNN
+	1    8600 1900
+	0    1    1    0   
+$EndComp
+Connection ~ 8950 1900
+Wire Wire Line
+	8950 1900 9250 1900
+Connection ~ 8350 1900
+Wire Wire Line
+	8350 1900 8650 1900
+Connection ~ 9250 1900
+Wire Wire Line
+	9250 1900 9550 1900
+Connection ~ 8050 1900
+Wire Wire Line
+	8050 1900 8350 1900
+Connection ~ 8650 1900
+Wire Wire Line
+	8650 1900 8950 1900
+$Comp
+L PowerPCB-rescue:Via_array-EcoRacerSchematics Via22
+U 1 1 5BDC0BA3
+P 4650 4200
+F 0 "Via22" V 4485 4072 60  0000 R CNN
+F 1 "Via_array" V 4379 4072 60  0000 R CNN
+F 2 "EcoRacerFootprints:Via_array" H 4650 4200 60  0001 C CNN
+F 3 "" H 4650 4200 60  0001 C CNN
+	1    4650 4200
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4600 4200
+Wire Wire Line
+	4600 4200 6950 4200
+$Comp
+L PowerPCB-rescue:Via_array-EcoRacerSchematics Via23
+U 1 1 5BDC0C4D
+P 7300 4200
+F 0 "Via23" V 7135 4072 60  0000 R CNN
+F 1 "Via_array" V 7029 4072 60  0000 R CNN
+F 2 "EcoRacerFootprints:Via_array" H 7300 4200 60  0001 C CNN
+F 3 "" H 7300 4200 60  0001 C CNN
+	1    7300 4200
+	0    -1   -1   0   
+$EndComp
+Connection ~ 7250 4200
+Wire Wire Line
+	7250 4200 9100 4200
+$Comp
+L PowerPCB-rescue:Via_array-EcoRacerSchematics Via24
+U 1 1 5BDC0CF5
+P 9150 4200
+F 0 "Via24" V 8985 4072 60  0000 R CNN
+F 1 "Via_array" V 8879 4072 60  0000 R CNN
+F 2 "EcoRacerFootprints:Via_array" H 9150 4200 60  0001 C CNN
+F 3 "" H 9150 4200 60  0001 C CNN
+	1    9150 4200
+	0    -1   -1   0   
+$EndComp
+Connection ~ 9100 4200
+Wire Wire Line
+	9100 4200 9350 4200
+$Comp
+L power:GND #PWR0106
+U 1 1 5C41037C
+P 4050 5850
+F 0 "#PWR0106" H 4050 5600 50  0001 C CNN
+F 1 "GND" H 4055 5677 50  0000 C CNN
+F 2 "" H 4050 5850 50  0001 C CNN
+F 3 "" H 4050 5850 50  0001 C CNN
+	1    4050 5850
+	1    0    0    -1  
+$EndComp
+Connection ~ 4050 5850
+$EndSCHEMATC

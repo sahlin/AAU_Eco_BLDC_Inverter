@@ -1,0 +1,159 @@
+EESchema Schematic File Version 4
+LIBS:BLDC_4-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 7
+Title "BLDC Driver 4.11"
+Date "21 aug 2015"
+Rev "4.12"
+Comp "Benjamin Vedder"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 5200 4000 0    60   Input ~ 0
+CSn
+Text HLabel 5200 3900 0    60   Input ~ 0
+CLK
+Text HLabel 5200 3800 0    60   Output ~ 0
+MISO
+$Comp
+L Sensor_Magnetic:AS5048A U?
+U 1 1 5B8EC8CA
+P 5700 4000
+AR Path="/5B8EC8CA" Ref="U?"  Part="1" 
+AR Path="/53FBA77E/5B8EC8CA" Ref="U4"  Part="1" 
+F 0 "U4" H 5850 4450 60  0000 C CNN
+F 1 "AS5048A" H 5650 3900 60  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 5700 4000 60  0001 C CNN
+F 3 "" H 5700 4000 60  0001 C CNN
+	1    5700 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR063
+U 1 1 5B8EC929
+P 5400 4600
+F 0 "#PWR063" H 5400 4350 50  0001 C CNN
+F 1 "GND" H 5400 4450 50  0000 C CNN
+F 2 "" H 5400 4600 50  0001 C CNN
+F 3 "" H 5400 4600 50  0001 C CNN
+	1    5400 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C46
+U 1 1 5B8EE2AB
+P 5300 3400
+F 0 "C46" H 5325 3500 50  0000 L CNN
+F 1 "10uF" H 5325 3300 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 5338 3250 50  0001 C CNN
+F 3 "" H 5300 3400 50  0001 C CNN
+	1    5300 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C45
+U 1 1 5B8EE343
+P 6300 3400
+F 0 "C45" H 6325 3500 50  0000 L CNN
+F 1 "100nF" H 6325 3300 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6338 3250 50  0001 C CNN
+F 3 "" H 6300 3400 50  0001 C CNN
+	1    6300 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR066
+U 1 1 5B8EE3AF
+P 6500 3450
+F 0 "#PWR066" H 6500 3200 50  0001 C CNN
+F 1 "GND" H 6500 3300 50  0000 C CNN
+F 2 "" H 6500 3450 50  0001 C CNN
+F 3 "" H 6500 3450 50  0001 C CNN
+	1    6500 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR067
+U 1 1 5B8EE3CD
+P 5100 3450
+F 0 "#PWR067" H 5100 3200 50  0001 C CNN
+F 1 "GND" H 5100 3300 50  0000 C CNN
+F 2 "" H 5100 3450 50  0001 C CNN
+F 3 "" H 5100 3450 50  0001 C CNN
+	1    5100 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR065
+U 1 1 5B8EF02A
+P 5700 3350
+F 0 "#PWR065" H 5700 3200 50  0001 C CNN
+F 1 "+5V" H 5700 3490 50  0000 C CNN
+F 2 "" H 5700 3350 50  0001 C CNN
+F 3 "" H 5700 3350 50  0001 C CNN
+	1    5700 3350
+	1    0    0    -1  
+$EndComp
+Text Notes 5050 3150 0    60   ~ 0
+CLK = SCK?
+Text HLabel 5200 3700 0    60   Input ~ 0
+MOSI
+Wire Wire Line
+	5400 4600 5400 4550
+Wire Wire Line
+	5400 4550 5500 4550
+Wire Wire Line
+	5500 4550 5500 4500
+Connection ~ 5400 4550
+Wire Wire Line
+	5400 4550 5400 4500
+Wire Wire Line
+	5500 4550 5600 4550
+Wire Wire Line
+	5600 4550 5600 4500
+Connection ~ 5500 4550
+Wire Wire Line
+	5600 4550 5700 4550
+Wire Wire Line
+	5700 4550 5700 4500
+Connection ~ 5600 4550
+Wire Wire Line
+	5700 4550 5800 4550
+Wire Wire Line
+	5800 4550 5800 4500
+Connection ~ 5700 4550
+Wire Wire Line
+	5800 4550 5900 4550
+Wire Wire Line
+	5900 4550 5900 4500
+Connection ~ 5800 4550
+Wire Wire Line
+	5900 4550 6000 4550
+Wire Wire Line
+	6000 4550 6000 4500
+Connection ~ 5900 4550
+Wire Wire Line
+	5700 3350 5700 3400
+Connection ~ 5700 3400
+Wire Wire Line
+	5700 3400 5700 3500
+Wire Wire Line
+	5700 3400 6150 3400
+Wire Wire Line
+	6500 3450 6500 3400
+Wire Wire Line
+	6500 3400 6450 3400
+Wire Wire Line
+	5450 3400 5600 3400
+Wire Wire Line
+	5600 3400 5600 3500
+Wire Wire Line
+	5100 3450 5100 3400
+Wire Wire Line
+	5100 3400 5150 3400
+$EndSCHEMATC
